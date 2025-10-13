@@ -14,14 +14,14 @@ class Pagina{
     
     public function recebeMenu(){
         include "menu.php";
-    };
+    }
 
     public function recebeConteudo(){
-
-    };
+        include "conteudo.php";
+    }
 
     public function recebeRodape(){
         include "rodape.php";
-    };
+    }
 
 }
