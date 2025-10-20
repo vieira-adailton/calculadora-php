@@ -6,7 +6,13 @@ class Pagina{
     private $conteudo;
     private $rodape;
     
+    private function pg($pagina){
+        return $pagina.".php";
+    }
 
+    public function pagina($pagina){
+        include $this->pg($pagina);
+    }
     public function recebeCabecalho(){
         include "cabecalho.php";
     }
